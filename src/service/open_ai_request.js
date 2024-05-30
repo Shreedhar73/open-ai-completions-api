@@ -17,7 +17,6 @@ async function openAIRequest(content,prompt){
             "model": "gpt-3.5-turbo-1106",
             "messages": message,
             "response_format": {"type": "json_object"},
-            "n" : 3,
         },
         ///config
         {
@@ -33,6 +32,10 @@ async function openAIRequest(content,prompt){
     if(response.status == 200){
         console.log('success');
         return JSON.parse(response.data.choices[0].message.content);
+        // return ResponseModel(
+        //     'flash',
+        //     'content'
+        // )
     }else{
         console.log('failed');
         return response.statusText;

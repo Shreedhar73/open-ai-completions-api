@@ -17,7 +17,6 @@ JSON Structure:
     {
       "question": "What is the primary function of the 'XYZ' system introduced in the first section?",
       "answer": "The 'XYZ' system primarily facilitates automated data analysis.",
-      "type": "flash",
       "heading": "XYZ System Overview"  // note: this can also be empty
     },
     // Add more flash card question-and-answer pairs here, each from a different H1 heading
@@ -39,7 +38,6 @@ JSON Structure:
         {"answer": "Data security", "is_correct": false},
         {"answer": "Real-time viz", "is_correct": false}
       ],
-      "type": "mcq",
       "heading": "XYZ System Overview"
     },
     // Add more multiple choice question-and-answer pairs here, each from a different H1 heading
@@ -50,7 +48,7 @@ Cloze Cards
 Each cloze question should have up to six options to fill in the statement, with at least one correct answer and at most six correct answers.
 The options field should be a list of choices in the form of a map, where the option key holds the actual choice and the cloze key holds the 
 position of that option. If the cloze key is null, the option is an incorrect option. The "heading" in the response should reference the title of the parent H1 heading.
-
+On the question the clozes should be in format {{c0:shreya}}.
 JSON Structure:
 
 {
