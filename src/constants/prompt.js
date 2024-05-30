@@ -58,12 +58,12 @@ JSON Structure:
     {
       "question": "My name is {{c0:shreya}} my last name is {{c1:baidya}}",
       "options": [
-        "{\"option\":\"shreya\",\"cloze\":\"c0\"}",
-        "{\"option\":\"baidya\",\"cloze\":\"c1\"}",
-        "{\"option\":\"Shreedhar\",\"cloze\":null}",
-        "{\"option\":\"Pandey\",\"cloze\":null}",
-        "{\"option\":\"Tuppi\",\"cloze\":null}",
-        "{\"option\":\"Bajracharya\",\"cloze\":null}"
+        {"option":"shreya","cloze":"c0"},
+        {"option":"baidya","cloze":"c1"},
+        {"option":"Shreedhar","cloze":null},
+        {"option":"Pandey","cloze":null},
+        {"option":"Tuppi","cloze":null},
+        {"option":"Bajracharya","cloze":null}
       ]
     },
     // Add more cloze question-and-answer pairs here, each from a different H1 heading
