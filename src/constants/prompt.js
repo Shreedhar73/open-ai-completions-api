@@ -1,7 +1,5 @@
 const promptString  =   `
-
 Task Objective:
-
 Please generate an array of different types of question-and-answer pairs based on the provided content schema. 
 The types include flash cards, multiple choice questions (MCQs), and cloze cards. Each type has specific formatting requirements
 as detailed below. Each question should come from a different H1 heading, ensuring diversity in the topics covered. 

@@ -21,7 +21,7 @@ async function openAIRequest(content,prompt){
         ///config
         {
             headers : {
-                Authorization : "Bearer ",
+                Authorization : "Bearer",
                 "Content-Type" : ['application/json']
             },
             

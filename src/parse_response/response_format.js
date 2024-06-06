@@ -202,7 +202,7 @@ const responseData = {
                 "heading": elem.heading,
                 "content": JSON.stringify({
                     "question": elem.question,
-                    "answers": elem.options
+                    "options": elem.options
                 })
             });
         }
