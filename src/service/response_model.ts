@@ -1,6 +1,6 @@
 // class ResponseModel{
-//     type: string;
-//     content: string;
+//     type: string|null;
+//     content: string|null;
 
 //     constructor(type,content){
 //         this.type = type
@@ -8,4 +8,3 @@
 //     }
 
 // }
-
