@@ -1,7 +1,8 @@
 import axios from "axios";
 
 
-async function openAIRequest(content,prompt){
+export async function openAIRequest(content,prompt){
+    try{
     let message = [
         {
             "role": "system", "content": prompt
@@ -21,7 +22,7 @@ async function openAIRequest(content,prompt){
         ///config
         {
             headers : {
-                Authorization : "Bearer",
+                Authorization : "Bearer ",
                 "Content-Type" : ['application/json']
             },
             
@@ -39,7 +40,8 @@ async function openAIRequest(content,prompt){
     }else{
         console.log('failed');
         return response.statusText;
+    }}catch (err) {
+        console.log(err)
+        return err;
     }
 }
-
-export default {openAIRequest};

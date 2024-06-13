@@ -69,10 +69,9 @@ JSON Structure:
 Try to generate as much as possible.
 `;
 
-function returnPromt(){
-    return promptString
-}
 
-export default {returnPromt}
+export function returnPrompt(){
+  return promptString;
+}
 
 

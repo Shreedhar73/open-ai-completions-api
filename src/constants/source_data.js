@@ -20,12 +20,11 @@ const headings = [
     "References",
 ];
 
-function returnSourceData(){
+export function returnSourceData(){
     return sourceString;
 }
 
-function returnHeadings(){
+export function returnHeadings(){
     return headings;
 }
 
-export default {returnSourceData,returnHeadings};
