@@ -1,4 +1,5 @@
 import axios from "axios";
+import config from "../config.js";
 
 
 export async function openAIRequest(content,prompt){
@@ -22,7 +23,7 @@ export async function openAIRequest(content,prompt){
         ///config
         {
             headers : {
-                Authorization : "Bearer ",
+                Authorization : "Bearer "+ config.openAIKey,
                 "Content-Type" : ['application/json']
             },
             
